@@ -11,10 +11,16 @@ def move(position)
   position-=1;
   puts position
 
-    
 end
+def input_to_index(user_input)
+  user_input=user_input.to_i
+  converted_input=input_to_index(user_input)
+  
+end
+
 puts "enter the move"
-move_positon= gets.chomp
+#move_positon= gets.chomp
+move_positon=6.0
 position=move_positon.to_i
 puts position
 move(position)
