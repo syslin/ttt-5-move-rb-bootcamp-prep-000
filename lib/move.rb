@@ -7,20 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
-def move(position)
-  position-=1;
-  puts position
-
+def input_to_index(index)
+  converted_index = index.to_i 
+  converted_index -= 1
 end
-def input_to_index(user_input)
-  user_input=user_input.to_i
-  converted_input=input_to_index(user_input)
+
+def move(board,index,fill = 'X')
+  board[index] = fill
   
 end
-
-puts "enter the move"
-#move_positon= gets.chomp
-move_positon=6.0
-position=move_positon.to_i
-puts position
-move(position)
